@@ -8,14 +8,15 @@ import{
   Link
 } from "react-router-dom";
 
-import Home from "./routes/Home"
 
+import Home from "./routes/Home"
+//basename={process.env.PUBLIC_URL}
 function App() {
-  return(<Router>
+  return(<Router basename={process.env.PUBLIC_URL} >
     <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/movie/:num" element={<Detail />} />
-      <Route path="/hi" element ={<h1>hi</h1>} />
+      <Route path={"/"} element={<Home />}/>
+      <Route path={"/movie/:num"} element={<Detail />} />
+      <Route path={"/hi"} element ={<h1>hi</h1>} />
     </Routes>
   </Router>);
 }
