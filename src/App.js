@@ -12,7 +12,11 @@ import{
 import Home from "./routes/Home"
 //basename={process.env.PUBLIC_URL}
 function App() {
+<<<<<<< HEAD
   return(<Router basename={process.env.PUBLIC_URL} >
+=======
+  return(<Router basename={process.env.PUBLIC_URL}> 
+>>>>>>> c8e235d7ba0bc9482245857f7b41dfc3bd844a51
     <Routes>
       <Route path={"/"} element={<Home />}/>
       <Route path={"/movie/:num"} element={<Detail />} />
