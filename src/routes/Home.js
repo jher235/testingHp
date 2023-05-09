@@ -1,6 +1,6 @@
 import {useState, useEffect } from "react";
 import Movie from "../components/Movie";
-
+import styles from "./Home.module.css";
 
 function Home() {
   const [loading,setLoading] = useState(true)
@@ -16,14 +16,15 @@ function Home() {
   },[])
   //  console.log(moives)
   return (
-      <div>
-       {loading ? <h1>Loading...</h1> : 
-       <div> 
+      <div className={styles.container}>
+       {loading ? <h1 className={styles.loader}>Loading...</h1> : 
+       <div className={styles.movies}> 
         {movies.map((movie) =>( 
         <Movie 
           key = {movie.id}
           id = {movie.id}
-          mci={movie.medium_cover_image} 
+          mci={movie.medium_cover_image}
+          year={movie.year} 
           title={movie.title} 
           genres={movie.genres} 
           summary ={movie.summary} 
