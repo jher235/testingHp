@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/testingHp/static/js/main.f8790003.js",
+    "main.css": "/testingHp/static/css/main.c481bf87.css",
+    "main.js": "/testingHp/static/js/main.5aa323c5.js",
     "index.html": "/testingHp/index.html",
-    "main.f8790003.js.map": "/testingHp/static/js/main.f8790003.js.map"
+    "main.c481bf87.css.map": "/testingHp/static/css/main.c481bf87.css.map",
+    "main.5aa323c5.js.map": "/testingHp/static/js/main.5aa323c5.js.map"
   },
   "entrypoints": [
-    "static/js/main.f8790003.js"
+    "static/css/main.c481bf87.css",
+    "static/js/main.5aa323c5.js"
   ]
 }
